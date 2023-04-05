@@ -15,7 +15,7 @@ jobs:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ftp://5pointai.com
+          server: 5pointai.com
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: public_html/

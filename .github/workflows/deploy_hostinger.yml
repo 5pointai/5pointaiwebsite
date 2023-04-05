@@ -19,3 +19,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: public_html/
+          exclude: "db_config.php" # Exclude the db_config.php file from the sync

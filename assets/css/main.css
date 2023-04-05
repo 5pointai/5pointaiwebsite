@@ -99,13 +99,12 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d63;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #f80202 15%, #0b0a0a 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #fe0707 15%, #0e0e0e 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #f40303 15%, #060606 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #fc0202 15%, #0a0202 85%);
-	}
-	
+		background-color: #ff4f4f;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #ff4f4f 0%, #000000 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #ff4f4f 0%, #000000 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #ff4f4f 0%, #000000 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #ff4f4f 0%, #000000 85%);
+	}		
 	/* Add the custom CSS class here */
 	.custom-icon {
 		font-size: 1.5rem;

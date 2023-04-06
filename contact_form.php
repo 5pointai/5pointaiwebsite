@@ -1,8 +1,8 @@
 <?php
 require_once 'db_config.php';
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -40,7 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssss", $name, $email, $phone, $enquiry);
 
     if ($stmt->execute()) {
-        echo "<p class='success-message'>We'll get in touch with you shortly.</p>";
+        header("Location: thank_you.html");
+        exit();
     } else {
         echo "<p class='error-message'>Error: " . $stmt->error . "</p>";
     }
